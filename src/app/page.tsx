@@ -69,7 +69,7 @@ export default function Home() {
         publicKey: 'gfP6h58tuxWPpste9XxU',
         authenticationToken: '20838a9f20d127632a730c525d5a344e7a5cd7bfd943b44aaddaa1bac71221dcbdf9079b9cb15568ee8629d61c8434a76f6498b949ba2b92f68d74543cbc4a7aa6943e8d626116051ff7b9231cc12245',
         linkIdentifier: Date.now(),
-        callbackUrl: process.env.NEXT_APP_CALLBACK_URL,
+        callbackUrl: process.env.NEXT_PUBLIC_CALLBACK_URL,
         sourceImage: "",
         redirectUrl: "https://www.google.com",
         userDetails: {},
