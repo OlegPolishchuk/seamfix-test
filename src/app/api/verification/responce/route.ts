@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import {redirect} from "next/navigation";
 
 export async function GET(req: Request) {
   console.log('GET');
@@ -9,7 +10,10 @@ export async function GET(req: Request) {
 
 export async function POST(req: Request) {
   console.log('POST');
-  console.log('res =>', await req.json());
+  const res = await req.json()
+  console.log('res =>', res);
+
+  redirect(`http://localhost:3000/retailer/agreement/${res.linkIdentifier}`)
 
   return NextResponse.json({});
 }
